@@ -1,0 +1,125 @@
+/* Color Palette & Base Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --bg-color: #f8f9fa;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+}
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.motto {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #bdc3c7;
+    margin-bottom: 1.5rem;
+}
+
+.origins {
+    font-size: 1rem;
+    color: #ecf0f1;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+}
+
+/* Flexbox for Team Members (Single Row) */
+.team-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Forces a single row */
+    gap: 2rem;
+    overflow-x: auto; /* Adds a horizontal scrollbar on small screens */
+    padding-bottom: 1rem; /* Adds a little space for the scrollbar */
+    
+    /* Optional: hides scrollbar smoothly on some browsers while keeping functionality */
+    scrollbar-width: thin; 
+}
+
+/* Individual Member Cards */
+.member-card {
+    flex: 1 1 0; /* Ensures all 4 cards share the row equally */
+    min-width: 220px; /* Prevents the cards from getting too squished on small screens */
+    
+    background-color: var(--card-bg);
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid transparent;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--secondary-color);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+}
+
+.member-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.member-card .role {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+}
