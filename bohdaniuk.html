@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Oleksandr Bohdaniuk</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .resume-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+        .motto {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 10px 0;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #555;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .entry {
+            margin-bottom: 20px;
+        }
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .entry-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .entry-subtitle {
+            font-style: italic;
+            color: #555;
+        }
+        .entry-date {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #444;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .skill-category {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-wrapper">
+    <header>
+        <h1>Oleksandr Bohdaniuk</h1>
+        <div class="motto">"Qui nisi ego?"</div>
+        <div class="contact-info">
+            Lviv, Ukraine
+        </div>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Lviv Polytechnic National University</span>
+                <span class="entry-date">Expected Graduation: 2029</span>
+            </div>
+            <div class="entry-subtitle">Bachelor's in Applied Mathematics</div>
+            <ul>
+                <li>Institute of Applied Mathematics and Fundamental Sciences.</li>
+                <li>Relevant Coursework: Multivariable Calculus, Higher Algebra, Algorithms and Programming, Discrete Mathematics.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div>
+                <span class="skill-category">Programming Languages:</span> C++, Python
+            </div>
+            <div>
+                <span class="skill-category">Core Interests:</span> Artificial Intelligence, Machine Learning, Deep Learning
+            </div>
+            <div>
+                <span class="skill-category">Tools & Software:</span> Wolfram Language, Desmos
+            </div>
+            <div>
+                <span class="skill-category">Languages:</span> Ukrainian (Native), English
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">AI-Driven Narrator Modification</span>
+                <span class="entry-subtitle">Voices of the Void</span>
+            </div>
+            <ul>
+                <li>Designing and developing an artificial intelligence integration for real-time game narration.</li>
+                <li>Structuring the technical architecture utilizing C++ and Python.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Roller Coaster Track Design</span>
+                <span class="entry-subtitle">Academic Project</span>
+            </div>
+            <ul>
+                <li>Applied spline interpolation to model and design a complex roller coaster track.</li>
+                <li>Solved systems of equations using Wolfram Language and visualized results in Desmos.</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
