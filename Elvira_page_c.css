@@ -172,7 +172,7 @@ h1 {
     border: 2px solid #ddd;
     margin-bottom: 20px;
 }
-/* Адаптивность для мобильных */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
